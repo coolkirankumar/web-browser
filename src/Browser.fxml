@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.161-ea" fx:controller="com.marcel.browser.controller.RootController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="354.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="699.0" minHeight="10.0" prefHeight="665.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.0" minWidth="10.0" prefWidth="63.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="348.0" minWidth="10.0" prefWidth="64.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="707.0" minWidth="10.0" prefWidth="65.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="67.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="791.0" minWidth="10.0" prefWidth="791.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#onPreviousAction" prefHeight="120.0" prefWidth="129.0" styleClass="topbar-button" text="←">
+               <font>
+                  <Font name="Lato Regular" size="26.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onNextAction" prefHeight="191.0" prefWidth="155.0" styleClass="topbar-button" text="→" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Lato Regular" size="26.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onRefreshAction" prefHeight="178.0" prefWidth="151.0" styleClass="topbar-button" text="⟳" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Lato Regular" size="26.0" />
+               </font>
+            </Button>
+            <TextField fx:id="searchBar" onAction="#onSearchAction" prefHeight="124.0" prefWidth="846.0" styleClass="topbar-textfield" GridPane.columnIndex="4" />
+            <Button mnemonicParsing="false" onAction="#onHomeAction" prefHeight="105.0" prefWidth="124.0" styleClass="topbar-button-home" text="⌂" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Lato Regular" size="26.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onMinimizeAction" prefHeight="217.0" prefWidth="224.0" styleClass="topbar-button" text="☰" GridPane.columnIndex="5">
+               <font>
+                  <Font name="Lato Regular" size="26.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onCloseAction" prefHeight="145.0" prefWidth="179.0" styleClass="exit-button" text="X" GridPane.columnIndex="6">
+               <font>
+                  <Font name="Lato Regular" size="26.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <WebView fx:id="webView" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+   </children>
+</GridPane>

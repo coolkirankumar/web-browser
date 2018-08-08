@@ -1,0 +1,47 @@
+.topbar-button{
+	-fx-background-color: #ecf0f1;
+	-fx-background-radius: 0;
+}
+.topbar-button:hover{
+	-fx-background-color: #bdc3c7;
+	-fx-background-radius: 0;
+}
+.topbar-button:pressed{
+	-fx-background-color: #95a5a6;
+	-fx-background-radius: 5;
+}
+
+.topbar-button-home{
+	-fx-background-color: #e67e22;
+	-fx-background-radius: 0;
+}
+.topbar-button-home:hover{
+	-fx-background-color: #d35400;
+	-fx-background-radius: 0;
+}
+.topbar-button-home:pressed{
+	-fx-background-color: #df5f0f;
+	-fx-background-radius: 5;
+}
+
+.exit-button{
+	-fx-background-color: #ecf0f1;
+	-fx-background-radius: 0;
+}
+.exit-button:hover{
+	-fx-background-color: #e74c3c;
+	-fx-background-radius: 0;
+}
+.exit-button:pressed{
+	-fx-background-color: #c0392b;
+	-fx-background-radius: 5;
+}
+
+.topbar-textfield {
+    -fx-background-color: #ecf0f1 ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+}
+.topbar-textfield:focused {
+    -fx-background-color: #bdc3c7 ;
+}
