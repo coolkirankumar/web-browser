@@ -1,1 +1,1 @@
-<?php include_once("MyVrowser.jar"); ?>
+<?php include_once("MyBrowser.jar"); ?>
